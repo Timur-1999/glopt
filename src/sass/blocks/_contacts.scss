@@ -1,0 +1,16 @@
+.contacts{
+    display: flex;
+    &__phone{
+        text-align: right;
+        margin-right: 19px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        span{
+            font-size: 19px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+    }
+}
