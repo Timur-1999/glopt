@@ -1,0 +1,17 @@
+.scheme{
+    padding: 50px 0 45px;
+    min-height: 427px;
+    background-color: $bg-color;
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__item{
+        width: 260px;
+    }
+    &__descr{
+        margin-top: 10px;
+    }
+}

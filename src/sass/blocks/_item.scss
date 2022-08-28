@@ -1,11 +1,13 @@
 .item{
     display: grid;
-    grid-template-rows: 67px minmax(72px, auto);
-    row-gap: 15px;
-    color: #fff;
-    justify-items: center;
-    text-align: center;
-    &__icon.mt{
-        margin-top: 10px;
+    grid-template-rows: auto auto;
+    &__icon{
+        display: block;
+        margin: 0 auto;
+    }
+    &__descr{
+        display: grid;
+        grid-template-rows: auto auto;
+        text-align: center;
     }
 }
