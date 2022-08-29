@@ -1,28 +1,85 @@
 .carousel{
     margin-top: 30px;
-    &__img{
-        width: 114px;
-        height: 114px;
+    .slick-slide{
+        width: 600px;
+        opacity: 0;
+        position: relative;
+    }
+    .slick-track{
+        display: flex;
+        align-items: flex-end;
+    }
+    .img{
+        width: 70px;
+        height: 70px;
         border-radius: 100%;
         overflow: hidden;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-    &__descr{
+    .descr{
         margin-top: 20px;
         text-align: center;
         span{
             display: block;
-            font-size: 18px;
-            line-height: 22px;
             font-weight: 700;
+            margin-bottom: 10px;
+        }
+    }
+    .slick-active{
+        width: 300px;
+        opacity: .3;
+        .descr{
+            font-size: 7px;
+            span{
+                font-size: 10px;
+                line-height: 14px;
+                margin-bottom: 5px;
+            }
+        }
+        .img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .slick-prev{
+        position: absolute;
+        top: 20%;
+        transform: translateY(-20%);
+        left: 40%;
+        z-index: 10;
+    }
+    .slick-next{
+        position: absolute;
+        top: 20%;
+        transform: translateY(-20%);
+        right: 40%;
+        z-index: 10;
+    }
+    .slick-arrow{
+        border: none;
+        background: none;
+        width: 14px;
+        height: 46px;
+    }
+    .slick-center{
+        width: 600px;
+        margin: 0 20px;
+        opacity: 1;
+        .descr{
+            font-size: 14px;
+            span{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        .img{
+            width: 114px;
+            height: 114px;
         }
     }
 }
