@@ -1,0 +1,63 @@
+.map{
+    position: relative;
+    height: 500px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .marker{
+        position: absolute;
+        z-index: 10;
+        top: 212px;
+        left: 415px;
+        width: 51px;
+        height: 63px;
+        &__logo{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 38px;
+            height: 40px;
+            z-index: 100;
+
+        }
+    }
+    &__info{
+        position: absolute;
+        top: 163px;
+        left: 505px;
+        width: 329px;
+        height: 158px;
+        background-color: #ffffff;
+        padding: 27px 50px;
+        &::before{
+            position: absolute;
+            top: 35%;
+            left: -19px;
+            transform: rotate(45deg);
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+        }
+    }
+    &__descr{
+        font-size: 14px;
+        font-weight: 300;
+        color: $descr-color;
+        span{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: $main-color;
+        }
+        a{
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: underline;
+            color: $main-color;
+        }
+    }
+}

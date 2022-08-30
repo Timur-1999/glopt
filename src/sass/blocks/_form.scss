@@ -42,6 +42,9 @@
             outline: #898989;
             border: 2px solid #898989;
             padding: 0 30px;
+            &:focus{
+                border: 2px solid #25333c;
+            }
         }
     }
     &__btn-block{
