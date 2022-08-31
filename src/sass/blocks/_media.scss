@@ -1,0 +1,376 @@
+@media (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .contacts{
+        flex-direction: column;
+        row-gap: 5px;
+        &__phone{
+            font-size: 22px;
+            margin: 0;
+            text-align: center;
+            span{
+                display: none;
+            }
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 60px;
+        }
+        &__subtitle{
+            font-size: 34px;
+        }
+        &__items{
+            grid-template-columns: repeat(4, 220px);
+        }
+    }
+    .advantages{
+        &__items{
+            grid-template-columns: repeat(2, 460px);
+        }
+        &__item{
+            grid-template-columns: auto 360px;
+        }
+    }
+    .delivery{
+        &__items{
+            grid-template-columns: repeat(auto-fit , 300px);
+        }
+        &__item{
+            grid-template-columns: 300px;
+            grid-template-rows: 175px auto;
+            img{
+                width: 300px;
+            }
+            .item__descr{
+                grid-template-rows: 23px auto;
+            }
+        }
+    }
+    .staff{
+        &__descr{
+            width: 100%;
+        }
+    }
+    .price{
+        &__items{
+            grid-template-columns: repeat(4, 230px);
+        }
+    }
+    .map{
+        .marker{
+            left: 310px;
+        }
+        &__info{
+            left: 400px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .container{
+        width: 720px;
+    }
+    .header{
+        &__wrapper{
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .promo{
+        margin-top: 40px;
+        &__title{
+            font-size: 45px;
+        }
+        &__subtitle{
+            font-size: 26px;
+        }
+        &__items{
+            grid-template-columns: repeat(4, 175px);
+        }
+    }
+    .advantages{
+        &__items{
+            grid-template-columns: repeat(2, 355px);
+        }
+        &__item{
+            grid-template-columns: unset;
+        }
+        &__descr{
+            text-align: center;
+            text-align-last: unset;
+        }
+    }
+    .delivery{
+        &__items{
+            justify-content: space-around;
+        }
+    }
+    .price{
+        &__items{
+            grid-template-columns: repeat(auto-fit, 267px);
+            justify-content: center;
+            gap: 25px;
+        }
+    }
+    .form{
+        &__input{
+            grid-template-columns: repeat(3, 225px);
+        }
+    }
+    .carousel{
+        .slick-prev{
+            left: 37%;
+        }
+        .slick-next{
+            right: 37%;
+        }
+    }
+    .staff{
+        &__item{
+            grid-template-columns: 720px;
+        }
+        &__wrapper{
+            .form{
+                &__input{
+                    grid-template-columns: repeat(3, 210px);
+                }
+            }
+        }
+    }
+    .map{
+        .marker{
+            left: 205px;
+        }
+        &__info{
+            left: 295px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .container{
+        width: 540px;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .header{
+        &__wrapper{
+            gap: 20px;
+            .menu{
+                display: none;
+            }   
+        }
+    }
+    .promo{
+        margin-top: 30px;
+        &__descr{
+            font-size: 20px;
+        }
+        &__title{
+            margin-top: 7px;
+            font-size: 37px;
+        }
+        &__subtitle{
+            font-size: 21px;
+        }
+        &__items{
+            grid-template-columns: repeat(2, 265px);
+            row-gap: 10px;
+        }
+    }
+    .advantages{
+        &__items{
+            grid-template-columns: repeat(2, 265px);
+            row-gap: 15px;
+        }
+    }
+    .title_fz16{
+        font-size: 13px;
+    }
+    .descr{
+        font-size: 12px;
+    }
+    .form{
+        height: 405px;
+        &__wrapper{
+            grid-template-rows: 60px auto 65px;
+            height: 266px;
+        }
+        &__input{
+            grid-template-columns: 320px;
+            grid-template-rows: repeat(3, 40px);
+            row-gap: 10px;
+        }
+        &__btn-block{
+            align-items: center;
+        }
+    }
+    .carousel{
+        .slick-prev{
+            left: 34%;
+        }
+        .slick-next{
+            right: 34%;
+        }
+    }
+    .staff{
+        &__item{
+            grid-template-columns: 535px;
+            grid-template-rows: 68px 400px;
+        }
+        &__wrapper{
+            padding: 17px 80px 25px;
+            grid-template-rows: auto 115px;
+            row-gap: 25px;
+            .form__input{
+                grid-template-columns: 320px;
+                grid-template-rows: repeat(3, 40px);
+                row-gap: 10px;
+            }
+        }
+        &_bg3{
+            height: 585px;
+        }
+    }
+    .map{
+        .marker{
+            left: 105px;
+        }
+        &__info{
+            left: 195px;
+        }
+    }
+    .footer{
+        &__info{
+            justify-content: center;
+        }
+        &__descr{
+            column-gap: 10px;
+        }
+        &__logo{
+            margin-right: 5px;
+            width: 60px;
+            height: 63px;
+        }
+        &__text{
+            font-size: 12px;
+        }
+        .contacts{
+            display: none;
+        }
+    }
+    .pageup{
+        width: 55px;
+        height: 55px;
+    }
+}
+@media (max-width: 576px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .header{
+        &__wrapper{
+            margin-top: 50px;
+        }
+    }
+    .promo{
+        &__items{
+            grid-template-columns: auto;
+            justify-content: center;
+        }
+        &__item{
+            grid-template-columns: 290px;
+        }
+    }
+    .advantages{
+        &__items{
+            grid-template-columns: 265px;
+            justify-content: center;
+        }
+    }
+    .title{
+        font-size: 20px;
+        &_fz18{
+            font-size: 17px;
+        }
+    }
+    .subtitle{
+        font-size: 12px;
+        width: 290px;
+        margin: 0 auto;
+    }
+    .delivery{
+        &__items, &__item{
+            grid-template-columns: 290px;
+        }
+        &__item{
+            img{
+                width: 290px; 
+            }
+        }
+    }
+    .form__input{
+        grid-template-columns: 270px;
+    }
+    .carousel{
+        .slick-arrow{
+            top: 15%;
+        }
+        .slick-prev{
+            left: 18%;
+        }
+        .slick-next{
+            right: 18%;
+        }
+        .slick-slide{
+            opacity: 0;
+        }
+        .slick-center{
+            width: 290px;
+            opacity: 1;
+        }
+    }
+    .staff{
+        height: 440px;
+        &__item{
+            grid-template-columns: 290px;
+        }
+        &__wrapper{
+            padding: 10px;
+            .form__input{
+                grid-template-columns: 265px;
+            }
+        }
+        &_bg3{
+            height: 585px;
+        }
+    }
+    .map{
+        &__info{
+            display: none;
+        }
+    }
+    .footer{
+        height: 280px;
+        &__descr{
+            flex-direction: column;
+        }
+        &__logo{
+            margin: 0px 0px 10px;
+        }
+        &__text{
+            text-align: center;
+            font-size: 17px;
+        }
+        &__subinfo{
+            flex-direction: column;
+            text-align: center;
+            gap: 5px;
+        }
+    }
+    .pageup{
+        right: 10px;
+    }
+}

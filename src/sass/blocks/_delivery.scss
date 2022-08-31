@@ -5,8 +5,10 @@
         display: grid;
         grid-template-columns: repeat(3, 360px);
         justify-content: space-between;
+        row-gap: 40px;
     }
     &__item{
+        grid-template-rows: 210px auto;
         row-gap: 28px;
     }
 }

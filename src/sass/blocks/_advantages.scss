@@ -15,10 +15,8 @@
         grid-template-columns: auto 435px;
         column-gap: 20px;
     }
-    &__title{
-        text-align-last: left;
-    }
     &__descr{
         text-align: left;
+        text-align-last: left;
     }
 }
