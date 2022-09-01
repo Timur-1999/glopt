@@ -17,21 +17,11 @@
     background-color: $main-color;
 }
 .hamburger{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 40px;
-    height: 20px;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    span{
-        display: block;
-        height: 3px;
-        background: #fff;
-    } 
 }
+
 @import 'blocks/header';
+@import 'blocks/menu';
 @import 'blocks/contacts';
 @import 'blocks/button';
 @import 'blocks/promo';
