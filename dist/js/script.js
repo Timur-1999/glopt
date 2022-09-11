@@ -31,7 +31,7 @@ $(document).ready(function(){
           item.addEventListener('click', () => {
               hamburger.classList.toggle('hamburger_active');
               menu.classList.toggle('menu_active');
-          })
-      })
+          });
+      });
   });
 });
